@@ -76,4 +76,37 @@
 // console.log(age4);
 
 
+// DAY 4
+// Functions Calling Other Functions
+// Reviewing Functions
+// 1. functio declaration, 2. function expression, 3. Arrow function
+// Introduction to Arrays
+const friends = ["Ram", "Shyam", "Laxman"];
+console.log(friends);
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+friends[2] = "Sita";
+console.log(friends);
+
+const firstName = "Nupur";
+const aboutUser = [firstName, "Joshi", 2037 - 1991, "UI designer", friends];
+
+console.log(aboutUser);
+
+const years = new Array(2001, 2002, 2003);
+console.log(years);
+
+// Exercise
+
+const calcAge = function (birthYear) {
+    return 2026 - birthYear;
+}
+
+const years1 = [1990, 2000, 1947, 2015];
+
+console.log(calcAge(years1[1]));
+
+
+
 
