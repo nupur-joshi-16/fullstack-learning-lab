@@ -135,7 +135,37 @@
 
 // Iteration : The for Loop
 
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Lifting weights repetition ${rep}`);
-}
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
 
+// DAY 6
+
+// Looping Arrays, Breaking and Continuing
+
+// const userDetails = [
+//     "Nupur",
+//     "Joshi",
+//     2026 - 1980,
+//     "Fullstack Developer",
+//     ["Ram", "Laxman", "Sita"],
+//     123
+// ];
+
+// for (let i = 0; i < userDetails.length; i++) {
+//     console.log(`${userDetails[i]}`)
+// }
+
+const birthYears = [1980, 1994, 1996, 2008, 2019];
+const currentYear = 2026;
+const ages = [];
+
+for (let i = 0; i < birthYears.length; i++) {
+  // console.log(`User age is ${currentYear - birthYears[i]}`)
+  ages.push(`${currentYear - birthYears[i]}`);
+}
+console.log(ages);
+
+// continue and break
+// Looping Backwards and Loops in Loops
+// While loop
