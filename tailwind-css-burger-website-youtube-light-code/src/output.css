@@ -692,6 +692,16 @@ section{
   width: 100%;
 }
 
+@keyframes move{
+  50%{
+    transform: translateY(-1rem);
+  }
+}
+
+.animate-movingY{
+  animation: move 2s linear infinite;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -834,6 +844,11 @@ section{
     position: static;
   }
 
+  .md\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:ml-auto{
     margin-left: auto;
   }
@@ -862,6 +877,14 @@ section{
     flex-direction: row;
   }
 
+  .md\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .md\:gap-20{
+    gap: 5rem;
+  }
+
   .md\:border-none{
     border-style: none;
   }
@@ -870,10 +893,18 @@ section{
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
+  .md\:text-start{
+    text-align: start;
+  }
 }
 
 @media (min-width: 1024px){
   .lg\:basis-2\/5{
     flex-basis: 40%;
+  }
+
+  .lg\:basis-3\/5{
+    flex-basis: 60%;
   }
 }
